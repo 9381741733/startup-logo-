@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Design Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    
+    nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:pink;
+      padding:20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+    }
+    nav .logo {
+      font-size: 20px;
+     text-align:left;
+
+    }
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li {
+      font-weight: 500;
+    }
+
+    
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+    .intro .text {
+      max-width: 50%;
+    }
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .intro p {
+      margin-bottom: 1.5rem;
+    }
+    .intro button {
+      padding: 0.75rem 1.5rem;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .intro img {
+      max-width: 40%;
+      border-radius: 10px;
+    }
+
+   
+    .contact {
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact input:focus, .contact textarea:focus {
+      outline: none;
+      border-color: #007BFF;
+    }
+    .contact button {
+      padding: 0.75rem 1.5rem;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+
+    
+    .table-section {
+      padding: 2rem;
+    }
+    .table-section table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .table-section th, .table-section td {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    .table-section tfoot {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">Startup Logo</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="intro">
+    <div class="text">
+      <h1>Welcome to Our Startup</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button>Login</button>
+    </div>
+    <img src="https://s3-alpha-sig.figma.com/img/1bfe/0656/5ce73b370dc5f157ffb73c5df166e15b?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LhCxvOh8Yg28eWPNjoQM5xVr37u3ehESWHGAxvXqTuhdD~Wxs0TPuCvDPOTRdr9mFi1ekpv7krNwNle-Kw~G1TgmMeJpk7T50QVuPQ34H1KuajgGQt5yr3RG7dHsT8NB1LqoY-0coCqXOeYFuOPQO9VAipsRrUd637Y8YtulXh47hy7d2uLO6nJx~brDSKlHX9oEZfzG0KBo1q7IkhGyWzAOrQ3qnDe0~0lYyQ9C6YVDgMb2CTLXK5W7OiLMoyRDJ0W2SiPKR7nMvv8KhhwyEbgHe1f9us0o9ccPYKFpnjN1C4Ob9TyHhMHWZLOPi7R6BmSEVv-S-IY5OkyeywiWJQ__" alt="Jeff Bezos">
+  </section>
+
+  
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+     <input type="Mobile Number" placeholder="Mobile Number" required>
+     <input tpe="City" placeholder="City" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Submit Form</button>
+    </form>
+  </section>
+
+  
+  <section class="table-section">
+    <h2>Data Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>SNO</th>
+          <th>Startup Name</th>
+          <th>Startup Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>WowIndia</td>
+          <td>A startup with WOW Ideas</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Loreum Ipsum</td>
+          <td>Loreum Ipsum Text</td>
+        </tr>
+     </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Footer Content</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+</body>
+</html>
+
